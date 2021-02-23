@@ -6,18 +6,18 @@ const Notes = (props) => {
             return (
                 <div className="note-container">
                     <h1>{note.title}</h1>
-                    <p>{note.author}</p>
-                    <p>id: {note.id}</p>
-                    <hr/>
+                    <p>Author: {note.author}</p>
+                    <p>ID: {note.id}</p>
+                    <hr class="noteSeparator"></hr>
                     <p>{note.body}</p>
                  </div>   
             )
         })
     }
     return(
-        <div>
+        <div id='main'>
             <h1>Notes</h1>
-            <a href='/notes/new'>new note form</a>
+            <a href='/notes/new'>New Note Form</a>
             {renderNotes()}
         </div>   
     )

@@ -1,13 +1,81 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-h1{
-  color: blue;
+body {
+  margin: 10px;
+  background-color: rgb(247, 226, 199);
+  font-family: 'Roboto', sans-serif;
 }
 
-.page-container{
-  color: purple;
-  border: 3px solid black;
+#main{
+  color: rgb(80, 36, 0);
+  background-color: rgb(247, 226, 199);
+  font-family: 'Roboto', sans-serif;
+}
+
+.note-container{
+  color: rgb(80, 36, 0);
+  background-color: rgb(214, 191, 161);
+  border: 3px solid rgb(122, 55, 0);
   padding: 10px;
   margin: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid rgb(122, 55, 0); /* Gray border */
+  background-color: #f1f1f1 ;
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+  background-color: rgb(122, 55, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+  background-color: rgb(80, 36, 0);
+}
+
+/* Style the reset button with a specific background color etc */
+button[type=reset] {
+  background-color: rgb(122, 55, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the reset button, add a darker green color */
+button[type=reset]:hover {
+  background-color: rgb(80, 36, 0);
+}
+
+hr.noteSeparator {
+  border: 1px solid rgb(80, 36, 0);
+}
+
+/* Add a background color and some padding around the form */
+.noteForm {
+  border-radius: 0px;
+  background-color: rgb(214, 191, 161);
+  padding: 10px;
 }
