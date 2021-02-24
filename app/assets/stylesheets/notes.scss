@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body {
-  margin: 10px;
+  margin: 20px;
   background-color: rgb(247, 226, 199);
   font-family: 'Roboto', sans-serif;
 }
@@ -13,19 +13,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#nav{
+  padding-bottom: 20px;
+}
+
 .note-container{
   color: rgb(80, 36, 0);
   background-color: rgb(214, 191, 161);
-  border: 3px solid rgb(122, 55, 0);
-  padding: 10px;
-  margin: 10px;
+  border: 3px solid rgb(80, 36, 0);
+  padding: 0px 20px 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
+  box-shadow: 2px 2px 4px 4px #00000013;
 }
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid rgb(122, 55, 0); /* Gray border */
+  border: 1px solid rgb(80, 36, 0); /* Gray border */
   background-color: #f1f1f1 ;
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -41,11 +47,10 @@ textarea{
 
 /* Style the submit button with a specific background color etc */
 button[type=submit] {
-  background-color: rgb(122, 55, 0);
-  color: white;
+  background-color: rgb(80, 36, 0);
+  color: rgb(214, 191, 161);
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -56,12 +61,12 @@ button[type=submit]:hover {
 
 /* Style the reset button with a specific background color etc */
 button[type=reset] {
-  background-color: rgb(122, 55, 0);
-  color: white;
+  background-color: rgb(80, 36, 0);
+  color: rgb(214, 191, 161);
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 /* When moving the mouse over the reset button, add a darker green color */
@@ -75,7 +80,25 @@ hr.noteSeparator {
 
 /* Add a background color and some padding around the form */
 .noteForm {
-  border-radius: 0px;
+  color: rgb(80, 36, 0);
   background-color: rgb(214, 191, 161);
-  padding: 10px;
+  border: 3px solid rgb(80, 36, 0);
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 2px 2px 4px 4px #00000013;
+}
+
+a {
+  margin-left: 10px;
+  border: 3px solid rgb(80, 36, 0);
+  color: rgb(214, 191, 161);
+  background-color:rgb(80, 36, 0);
+  padding: 8px;
+  text-decoration: none;
+}
+
+#note-content{
+  padding-bottom: 10px;
 }
