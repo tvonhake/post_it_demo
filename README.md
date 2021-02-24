@@ -3,22 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. git clone git@github.com:/tvonhake/post_it_demo
+2. cd post_it_demo
+3. run 'bundle'
+4. run 'yarn'
+5. rails db:create db:migrate db:seed
+6. rails s
+7. go to localhost:3000
