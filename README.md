@@ -7,6 +7,6 @@ application up and running.
 2. cd post_it_demo
 3. run 'bundle'
 4. run 'yarn'
-5. rails db:create db:migrate db:seed
+5. rails db:create db:migrate
 6. rails s
 7. go to localhost:3000
